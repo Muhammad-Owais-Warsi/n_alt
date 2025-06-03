@@ -46,7 +46,7 @@ app.use("/tunnel/:tunnelId", async (req, res) => {
   })
   console.log(STORE)
   
-  res.end("ok");
+
 
 });
 
