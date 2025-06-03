@@ -27,7 +27,7 @@ app.get("/create", async (req, res) => {
 
   STORE[tunnelId] = {};
 
-  res.json({ url: `http://localhost:3000/tunnel/${tunnelId}`, id: tunnelId  ,key: process.env.KEY, cluster: process.env.CLUSTER });
+  res.json({ url: `https://nalt.onrender.com/tunnel/${tunnelId}`, id: tunnelId  ,key: process.env.KEY, cluster: process.env.CLUSTER });
 });
 
 app.use("/tunnel/:tunnelId", async (req, res) => {
